@@ -1,0 +1,322 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.helloworld.MainActivity" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="364dp"
+        android:layout_weight="0.48" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5.16" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="366dp"
+                    android:fontFamily="sans-serif-light"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/showLessonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="Lesson"
+                        android:textSize="15sp" />
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp" >
+        
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:background="@drawable/d1"
+                            android:layout_margin="3dp"
+                            android:gravity="center"
+                            android:text="College" />
+        
+                        <TextView
+                            android:id="@+id/showCollege"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="12sp"
+                            android:layout_margin="3dp"
+                            android:layout_weight="0.25"
+                            android:text="TextView" />
+        
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/d4"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:text="Type" />
+
+                        <TextView
+                            android:id="@+id/showType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="TextView"
+                            android:textSize="12sp" />
+                        
+                        <TextView
+                            android:id="@+id/textView233"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/d2"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:text="Credit:" />
+
+                        <TextView
+                            android:id="@+id/showCredit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="TextView"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" >
+        
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/d3"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:text="Like:" />
+
+                        <TextView
+                            android:id="@+id/showLike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="TextView"
+                            android:textSize="12sp" />
+                        
+                        <TextView
+                            android:id="@+id/textView234"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/d6"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:text="Dislike:" />
+
+                        <TextView
+                            android:id="@+id/showDislike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="TextView"
+                            android:textSize="12sp" />
+        
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" >
+        
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:background="@drawable/d5"
+                            
+                            android:layout_margin="3dp"
+                            android:gravity="center"
+                            android:text="Teacher" />
+        
+                        <TextView
+                            android:id="@+id/showTeacherName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:layout_margin="3dp"
+                            android:textSize="12sp"
+                            android:layout_weight="0.25"
+                            android:text="TextView" />
+
+        
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+            
+                            <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:fontFamily="sans-serif-light"
+                            android:background="@drawable/d6"
+                            android:gravity="center"
+                            android:text="Time And Place" />
+            
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/showTimePlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="TextView"
+                        android:textSize="12sp" />
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_height="364dp"
+                    android:orientation="vertical" >
+                    
+                    <ListView
+                        android:id="@+id/commentList"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_marginTop="5dp" >
+                    </ListView>
+                    
+                    <EditText
+                        android:id="@+id/comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="textMultiLine" >
+                    </EditText>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content" >
+                        
+                        <Button
+                            android:id="@+id/like"
+                            android:background="@layout/likedislike"
+                            android:layout_width="70dp"
+                            android:layout_gravity="start"
+                            android:text="Like"
+                            android:fontFamily="sans-serif-light"
+                            android:textSize="12sp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginRight="60dp"
+                            android:layout_marginTop="3dp" />
+                        
+                        <Button
+                            android:id="@+id/dislike"
+                            android:background="@layout/dislikelike"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Dislike"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="3dp" />
+                        
+                    </LinearLayout>
+                    
+                    <Button
+                        android:id="@+id/addComment"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@layout/mybutton2"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Add a Comment" />
+    
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </TabHost>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp" >
+
+        <Button
+            android:id="@+id/showDetailBack"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@layout/mybutton"
+            android:fontFamily="sans-serif-light"
+            android:text="Back" />
+    </LinearLayout>
+
+</LinearLayout>
