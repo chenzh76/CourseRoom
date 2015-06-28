@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/itemLessonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="0.15"
+            android:textSize="12sp"
+            android:gravity="start"
+            android:fontFamily="sans-serif-light"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/itemCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:textSize="12sp"
+            android:layout_margin="3dp"
+            android:gravity="end"
+            android:fontFamily="sans-serif-light"
+            android:text="TextView" />
+    </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >     
+
+
+        <TextView
+            android:id="@+id/itemType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="start"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="3dp"
+            android:textSize="12sp"
+            android:text="TextView" />
+
+
+        <TextView
+            android:id="@+id/itemTeacherName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="end"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="3dp"
+            android:textSize="12sp"
+            android:text="TextView" />
+        
+    </LinearLayout>
+    
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+       <TextView
+           android:id="@+id/textView123"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_margin="3dp"
+           android:fontFamily="sans-serif-light"
+           android:gravity="start"
+           android:text="Like:"
+           android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/itemLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="start"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="3dp"
+            android:textSize="12sp"
+            android:text="TextView" />
+        
+        <TextView
+           android:id="@+id/textView124"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_margin="3dp"
+           android:fontFamily="sans-serif-light"
+           android:gravity="end"
+           android:text="Dislike:"
+           android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/itemDislike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="end"
+            android:text="TextView"
+            android:textSize="12sp" />
+        
+    </LinearLayout>
+
+</LinearLayout>
