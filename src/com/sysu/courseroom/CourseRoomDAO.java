@@ -50,7 +50,13 @@ public class CourseRoomDAO {
 		mp.put("六", 7);
 		mp.put("日", 1);
 		context = c;
-		helper = new MySQLiteOpenHelper(c);
+		if(!c.getDatabasePath("course.db").exists()) {
+			helper = new MySQLiteOpenHelper(c);
+			readDataFromFile();
+		}
+		else {
+			helper = new MySQLiteOpenHelper(c);
+		}
 	}
 	public static CourseRoomDAO getInstance(Context c){
 		if (instance == null) {
@@ -113,7 +119,7 @@ public class CourseRoomDAO {
 	/** 从 res/raw/data文本文件中读取，生成数据库文件
 	 * 
 	 */
-/*	public void readDataFromFile() {
+	public void readDataFromFile() {
 		try {
 			InputStream inputStream = context.getResources().openRawResource(R.raw.data);
 			InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
@@ -154,7 +160,7 @@ public class CourseRoomDAO {
 		}catch (IOException e) {
 			
 		}
-	}*/
+	}
 	
 	/** 根据某个具体时间查询空教室
 	 * @param year    年份

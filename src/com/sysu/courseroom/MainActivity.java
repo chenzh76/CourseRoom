@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class MainActivity extends ActionBarActivity {
+	CourseRoomDAO courseDAO;
 	Button searchEmptyClassroom;
 	Button searchLesson;
 
@@ -19,6 +20,8 @@ public class MainActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		courseDAO = CourseRoomDAO.getInstance(this);
 		
 		searchEmptyClassroom = (Button)findViewById(R.id.SearchRoom);
 		searchEmptyClassroom.setOnClickListener(
